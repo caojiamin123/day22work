@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work12校验邮箱</title>
+	</head>
+	<body>
+		<input type="text" name="" id="txt">
+		<input type="button" value="校验" id="btn">
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var otxt=document.getElementById("txt");
+			var obtn=document.getElementById("btn");
+			
+			var reg=/^[a-z0-9]+@[a-z0-9]+(\.[a-z]{2,6}){1,2}$/;
+			
+			obtn.onclick=function(){
+				alert(reg.test(otxt.value));
+			}
+		}
+	</script>
+</html>

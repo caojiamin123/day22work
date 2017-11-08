@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work8输入框只能输入数字</title>
+	</head>
+	<body>
+		<input type="text" name="" id="txt"/>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var otxt=document.getElementById("txt");
+			
+			otxt.oninput=function(){
+				otxt.value=otxt.value.replace(/\D/,'');
+			}
+		}
+	</script>
+</html>

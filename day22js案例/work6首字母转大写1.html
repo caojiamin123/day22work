@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work6首字母转大写1</title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var str='welcome to china';
+			str.replace(/\w+/g,function(s){
+				alert(s.charAt(0).toUpperCase()+s.substring(1));
+			})
+		}
+	</script>
+</html>
